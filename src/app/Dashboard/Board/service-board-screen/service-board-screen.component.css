@@ -1,0 +1,41 @@
+ul{
+	height: 100%;
+	margin: 0;
+	padding: 2px;
+}
+li{
+	display: flex;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 50px;
+}
+h5{
+	color: var(--user-Detail);
+	font-family: var(--Poppins-style);
+}
+li:hover{
+	cursor: pointer;
+	background-color:  var(--user-control);
+	transition: 0.3s ease-in-out;
+}
+.navContainer{
+	display: flex;
+	justify-content: space-around;
+	height: 50px;
+	width: 100%;
+	background-color: var(--nav-color);
+	border-radius: 80px;
+	box-shadow: 0px 0px 5px 0px var(--nav-color);
+}
+.serviceContainer{
+	width: 100%;
+	background-color: var(--form-background);
+	min-height: 70vh;
+	margin-top: 10px;
+	border: none;
+	border-radius: 25px;
+	padding: 20px;
+	height: 100%;
+	box-shadow: 0px 0px 3px 0px var(--nav-color);
+}

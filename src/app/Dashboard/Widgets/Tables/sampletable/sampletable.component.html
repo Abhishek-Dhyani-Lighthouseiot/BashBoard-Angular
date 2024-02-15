@@ -1,0 +1,42 @@
+<table class="table striped">
+    <thead>
+        <tr >
+            <th *ngFor="let item of tableHeader"> {{ item }} </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of tableBody">
+            <td *ngFor="let item of data">
+                {{ item }}
+            </td>
+          </tr>
+    </tbody>
+</table>
+
+<div class="container">
+    <h5>
+        {{ this.response | json}}
+    </h5>
+    <hr>
+    <p-table [value]="response" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr >
+                <th *ngFor="let item of tableHeader"> {{ item }} </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-response>
+            <tr>
+                <td>{{ response.id }}</td>
+                <td>{{ response.meterNumber }}</td>
+                <td>{{ response.groupName }}</td>
+                <td>{{ response.society }}</td>
+                <td>{{ response.userName }}</td>
+                <td>{{ response.installationDate }}</td>
+                <td>{{ response.status }}</td>
+                <td>{{ response.address }}</td>
+                <td>{{ response.lattitude }}</td>
+                <td>{{ response.longitude }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

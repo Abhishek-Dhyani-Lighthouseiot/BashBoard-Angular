@@ -1,0 +1,23 @@
+<ul class="navContainer">
+    <li onclick="readService()"><h5>Read Service</h5></li>
+    <li onclick="writeService()"><h5>Write Service</h5></li>
+    <li onclick="meterConfiguration()"><h5>Meter Configuration</h5></li>
+    <li onclick="RequestLog()"><h5>Requests Log</h5></li>
+</ul>
+
+<div class="serviceContainer">
+    <div *ngIf="read_service">
+        <app-read-service></app-read-service>
+    </div>
+    <div *ngIf="meter_configuration">
+        <app-meter-configuration></app-meter-configuration>
+    </div>
+    <div *ngIf="write_service">
+        <app-write-service></app-write-service>
+    </div>
+    <div *ngIf="request_log">
+        <app-request-log></app-request-log>
+    </div>
+</div>
+
+

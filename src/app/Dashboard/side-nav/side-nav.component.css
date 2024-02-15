@@ -1,0 +1,64 @@
+.side-bar{
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    height:100vh;
+    width: 14.5%;
+    margin-left: -10%;
+    background: var(--side-bar-color);
+    transition: margin-left 0.3s ease-in-out;
+    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+    z-index: 2;
+}
+.side-bar:hover{
+    margin-left: 0vh;
+}
+.companyLogo{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    min-height: 65px;
+    max-height: 65px;
+    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+}
+.logo{
+    height: 50px;
+    width: 45px;
+    padding: 4px;
+    margin: 7px;
+}
+.option{
+    display: flex;
+    justify-content: space-around;    
+}
+.option:hover{
+    background: var(--nav-hover);
+    cursor: pointer;
+}
+.optionHeading{
+    font-family: var(--Poppins-style);
+    font-weight: light;
+    font-size: medium;
+    color: var(--text-color);
+    margin: auto;
+    margin-left: 20px;
+    user-select: none;
+}
+.svgIcon{
+    height:50px;
+    width: 50px;
+    padding: 12px;
+    margin: auto;
+    margin-right: 10px;
+    fill: var(--icon-color);
+    user-select: none;
+}
+.burger{
+    height:60px;
+    width: 60px;
+    padding: 5px;
+    margin: auto;
+    margin-right: 5px;
+    fill: var(--icon-color);
+}

@@ -1,0 +1,51 @@
+<p-table
+    #dt2
+    dataKey="id"
+    [value]="meterList"
+    [rows]="10"
+    [showCurrentPageReport]="true"
+    [rowsPerPageOptions]="[5,10, 25, 50]"
+    [paginator]="true"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+>
+
+    <ng-template pTemplate="caption">
+        <div class="table-header">
+            <h5>Device List</h5>
+            <!-- <span class="p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text" (input)="dt2.filterGlobal($event.target, 'contains')" placeholder="Global Search" />
+            </span> -->
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="header">
+        <tr>
+            <th class="heads" pSortableColumn="{{ heading }}" *ngFor="let heading of tableHeader">
+                {{ heading }} <p-sortIcon field="{{heading}}"></p-sortIcon>
+            </th>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-response>
+        <tr class="p-selectable-row">
+            <td class="tableData">{{ response.id }}</td>
+            <td (click)="getMeterData(response.meterNumber)" class="meterLink" #meterNumber>{{ response.meterNumber }}</td>
+            <td class="tableData">{{ response.groupName }}</td>
+            <td class="tableData">{{ response.society }}</td>
+            <td class="tableData">{{ response.userName }}</td>
+            <td class="tableData">{{ response.installationDate }}</td>
+            <td class="tableData">{{ response.status }}</td>
+            <td class="tableData">{{ response.address }}</td>
+            <td class="tableData">{{ response.lattitude }}</td>
+            <td class="tableData">{{ response.longitude }}</td>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="emptymessage">
+        <tr>
+            <td colspan="5">No customers found.</td>
+        </tr>
+    </ng-template>
+
+</p-table>

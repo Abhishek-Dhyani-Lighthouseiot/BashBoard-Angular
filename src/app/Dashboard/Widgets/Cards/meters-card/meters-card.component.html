@@ -1,0 +1,91 @@
+<div class="row" style="margin: 0; padding: 0;">
+
+    <div class="col-3">
+        <div class="card" id="c1">
+            <div class="cardHeading" *ngIf="!meterSelected">Meter Details</div>
+            <div *ngIf="meterSelected">
+                <div class="row"><h4>Meter Details</h4></div>
+                <div class="row">
+                    <div class="col-8">
+                        <div><h5>Serial Number : {{ meterSerialNumber }}</h5></div>
+                        <div><h5>Meter Type: {{ meterType }}</h5></div>
+                        <div><h5>Installation On : {{ installationDate }}</h5></div>
+                        <div><h5>Commissioned : {{ commissioned }}</h5></div>
+                        <div><h5>Current Balance : {{ currentBalance }}</h5></div>
+                    </div>
+                    <div class="col-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card" id="c2">
+            <div class="cardHeading" *ngIf="!meterSelected">Energy Details</div>
+            <div *ngIf="meterSelected">
+                <div class="row"><h4>Energy Details</h4></div>
+                <div class="row">
+                    <div><h5>Active Energy : {{ meterSerialNumber }}</h5></div>
+                    <div><h5>Reactive Energy: {{ meterType }}</h5></div>
+                    <div><h5>Apparanet Energy : {{ installationDate }}</h5></div>
+                    <div><h5>Cummulative Energy : {{ installationDate }}</h5></div>
+                    <div><h5>Maximum Demand : {{ installationDate }}</h5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card" id="c3">
+            <div class="cardHeading" *ngIf="!meterSelected">Balance Details</div>
+            <div *ngIf="meterSelected">
+                <div class="row"><h4>Balance Details</h4></div>
+                <div class="row">
+                    <div><h5>Current Balance : {{ meterSerialNumber }}</h5></div>
+                    <div><h5>Emergency Balance : {{ meterType }}</h5></div>
+                    <div><h5>Maximum Recharge : {{ installationDate }}</h5></div>
+                    <div><h5>Minimum Recharge : {{ installationDate }}</h5></div>
+                    <div><h5>Low balance: {{ installationDate }}</h5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card" id="c4">
+            <div class="cardHeading" *ngIf="!meterSelected">Quick Action</div>
+            <div *ngIf="meterSelected">
+                <div class="row"><h4>Quick Action</h4></div>
+                <div class="d-flex mt-4" style="justify-content: space-around;">
+                    <div>
+                        <div class="actionCell">
+                            <i class="pi pi-sort-alt actionIcon"></i>
+                        </div>
+                        <h5>Connect</h5>
+                    </div>
+                    <div>
+                        <div class="actionCell">
+                            <i class="pi pi-power-off actionIcon"></i>
+                        </div>
+                        <h5>Disconnect</h5>
+                    </div>
+                    <div>
+                        <div class="actionCell">
+                            <i class="pi pi-sync actionIcon"></i>
+                        </div>
+                        <h5>MD-Reset</h5>
+                    </div>
+                    <div>
+                        <div class="actionCell">
+                            <i class="pi pi-clock actionIcon"></i>
+                        </div>
+                        <h5>Reset RTC</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

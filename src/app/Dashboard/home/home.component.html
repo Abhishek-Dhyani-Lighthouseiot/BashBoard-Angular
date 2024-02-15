@@ -1,0 +1,20 @@
+<app-side-nav (getOption)="showScreen($event)"></app-side-nav>
+
+<app-header></app-header>
+
+<div class="board">
+
+    <h5>{{ mainComponent }}</h5>
+
+    <app-dash-board-screen *ngIf="( mainComponent  === 'Dashboard')"></app-dash-board-screen>
+
+    <app-device-board-screen *ngIf="( mainComponent  === 'Devices')"></app-device-board-screen>
+
+    <app-service-board-screen *ngIf="( mainComponent  === 'Services')"></app-service-board-screen>
+
+    <app-data-board-screen *ngIf="( mainComponent  === 'Data')"></app-data-board-screen>
+
+    <app-account-board-screen *ngIf="( mainComponent  === 'Account')"></app-account-board-screen>
+    
+    
+</div>

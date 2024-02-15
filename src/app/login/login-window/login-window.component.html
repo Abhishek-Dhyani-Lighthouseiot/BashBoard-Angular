@@ -1,0 +1,92 @@
+<div class="box">
+    <img class="logo" src="\assets\IMAGES\companyLogo1.png" alt="">
+</div>
+
+<hr class="linebreak">
+
+<div *ngIf="!otpBox" class="loginContent">
+    <div class="box">
+        <p class="para">
+            Welcome to LighthouseIoT solution. Please enter your credintials.
+        </p>
+    </div>
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <div class="inputBox">
+        
+            <div class="inputContainer">
+
+                <img src="/assets/SVG/user.svg" class="inputIcon" alt="">
+        
+                <input id="Id" name="id" placeholder="Enter UserName" class="inputStyle" type="text" ngModel >
+
+
+                <img *ngIf="!invalidPassword" src="/assets/SVG/none.svg" class="inputIcons" alt="">
+                <img *ngIf="invalidPassword" src="/assets/SVG/error.svg" class="inputIcons" alt="">
+
+            </div>
+        
+            <div class="inputContainer">
+
+                <img src="/assets/SVG/password.svg"  alt="">
+        
+                <input id="password" name="password" placeholder="Enter Password" class="inputStyle" type="{{ passwordType }}" ngModel>
+        
+                <img *ngIf="showPassword" (click)="viewPassword()" src="/assets/SVG/showpassword.svg" class="inputIcons" alt="">
+                <img *ngIf="!showPassword" (click)="viewPassword()" src="/assets/SVG/hidepassword.svg" class="inputIcons" alt="">
+
+            </div>
+        
+            <div class="container">
+                <div class="checkbox-wrapper-18">
+                    <div class="round d-flex">
+                      <input type="checkbox" id="checkbox-18" />
+                      <label for="checkbox-18"></label> <h5>&nbsp; Remember Me!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="display: flex; justify-content: center;">
+                <button type="submit" class="submitButton"> {{ submitButton }} </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div *ngIf="otpBox" class="loginContent">
+    <div class="box">
+        <p class="para">
+            Please Enter the OTP , it has been sent to your registered email. OTP will be valid upto :
+        </p>
+    </div>
+    <div class="box">
+        <h3>{{Timer}}</h3>
+    </div>
+    <div class="otpBox">
+        <h5><strong>Enter OTP</strong></h5>
+
+        <div class="row">
+            <input class="otpInput" type="text" #txt1 maxlength="1" (keyup)="move($event,  '',txt1,txt2)">
+            <input class="otpInput" type="text" #txt2 maxlength="1" (keyup)="move($event,txt1,txt2,txt3)">
+            <input class="otpInput" type="text" #txt3 maxlength="1" (keyup)="move($event,txt2,txt3,txt4)">
+            <input class="otpInput" type="text" #txt4 maxlength="1" (keyup)="move($event,txt3,txt4,txt5)">
+            <input class="otpInput" type="text" #txt5 maxlength="1" (keyup)="move($event,txt4,txt5,txt6)">
+            <input class="otpInput" type="text" #txt6 maxlength="1" (keyup)="move($event,txt5,txt6,  '')">
+        </div>
+
+        <div class="container">
+            
+            <button class="submitButton"> Log-in </button>
+        </div>
+        <div>
+            <a class="resend" href="" >Re-Send OTP</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <hr class="linebreak">
+    <div class="box">
+        <p class="para">&#169;  2023 LighthouseIoT. All rights reserved. </p>
+    </div>
+</div>

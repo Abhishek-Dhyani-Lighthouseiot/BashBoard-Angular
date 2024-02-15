@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@200&display=swap');
+.box{
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+    color: rgb(109, 2, 2);
+}
+.footer{
+    position: absolute;
+    width: 93%;
+    bottom: 0;
+}
+.linebreak
+{
+    height: 1vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 3vh;
+}
+.logo{
+    margin-top: 4vh;
+    height:10vh;
+    width: 6vw;
+}
+.para{
+    margin-bottom: 0.5vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vh;
+}
+.inputBox{
+    position: relative;
+    padding: 1vh;
+    margin: 0;
+}
+.inputContainer{
+    position: relative;
+    width: 100%;
+    height:4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 8vh  8vh  8vh  8vh;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.404);
+    padding: 0.5vh;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+}
+.viewPassword{
+    background-color: rgba(58, 58, 160, 0.541);
+    width: fit-content;
+    border-radius: 10vh 10vh 10vh 10vh;
+    width: 5.3vh;
+    height: 5.3vh;
+    box-shadow: 0px 0px 2px 2px rgba(58, 58, 160, 0.541);
+}
+.inputStyle{
+    background: transparent;
+    width: 90%;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+}
+.inputStyle:focus{
+    outline: none;
+    border: none;
+}
+/* checkbox */
+
+.container{
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox-wrapper-18 .round {
+    position: relative;
+  }
+
+  .checkbox-wrapper-18 .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2.2vh;
+    width: 1.3vw;
+    display: block;
+  }
+
+  .checkbox-wrapper-18 .round label:after {
+    border: 0.2vh solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 0.7vh;
+    left: 0.4vh;
+    opacity: 0;
+    position: absolute;
+    top: 0.6vh;
+    transform: rotate(-45deg);
+    width: 1.3vh;
+  }
+
+  .checkbox-wrapper-18 .round input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+
+  .checkbox-wrapper-18 .round input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+  }
+
+  .checkbox-wrapper-18 .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+  /* checkbox end */
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6vh;
+    margin-top: 0.1vh;
+    color: white;
+}
+
+.submitButton{
+    position: absolute;
+    height: 3.5vh;
+    width: 20vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9vh;
+    border: none;
+    border-radius: 1vh 1vh 1vh 1vh ;
+    background-color: #304eb188;
+}
+.submitButton:hover{
+    background-image: radial-gradient(100% 100% at 100% 0, #5c49af 0, #304eb188 100%);
+    box-shadow: 0px 0px 5px 2px #8f78f8;
+    font-weight: bolder;
+}
+.otpBox{
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 3vh;
+}
+.otpInput{
+    height: 5.6vh;
+    width: 5.6vh;
+    margin: 0.2vh;
+    border: none;
+    border-radius: 1vh 1vh 1vh 1vh ;
+    background-color: #cccccc77;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+    padding: 0;
+}
+.otpInput:focus{
+    outline: none;
+    border: 0.1vh solid rgb(245, 236, 225);
+}
+.row{
+    width: 50vh;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+.resend{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8vh;
+    font-weight: bolder;
+    color: #8f78f8;
+    cursor: pointer;
+}
+.loginContent{
+    margin-top: 2vh;
+}
+.inputIcons{
+    margin-right: 0.6vh;
+    margin-top: 0.2vh;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+nav{
+    top: 0;
+    display: flex;
+    min-height: 65px;
+    justify-content:flex-end;
+    background: var(--nav-color);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.205);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.userControls{
+    position: relative;
+    height: fit-content;
+    background-color: var(--user-control);
+    display:flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.userProfile{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    padding: 2px;
+    user-select: none;
+}
+.invitationContainer{
+    position: relative;
+    margin: 2px;
+    margin-left: 5px;
+    margin-right: 12px;
+}
+.welcome{
+    color: var(--user-Detail);
+    font-size: 12px;
+    font-family: var(--Poppins-style);
+    text-align: center;
+    user-select: none;
+}
+.userName{
+    color: var(--user-Detail);
+    font-size: 15px;
+    font-family: var(--Poppins-style);
+    font-weight: medium;
+    user-select: none;
+}
+.logout{
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+    padding: 5px;
+}

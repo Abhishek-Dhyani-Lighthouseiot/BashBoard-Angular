@@ -1,0 +1,31 @@
+<p-table
+    [paginator] = "true"
+    [rows] = "5"
+    [showCurrentPageReport] = "true"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [rowsPerPageOptions]="[5, 10, 20]"
+>
+    <ng-template pTemplate="header">
+        <tr>
+            <th><h5>Sr.No.</h5></th>
+            <th><h5>Meter Number</h5></th>
+            <th><h5>Group</h5></th>
+            <th><h5>Society</h5></th>
+            <th><h5>Request Type</h5></th>
+            <th><h5>Status</h5></th>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body">
+        <!-- Content Of The Table Needs to come Here -->
+        
+    </ng-template>
+
+    <ng-template pTemplate="paginatorleft">
+        <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+        <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+    </ng-template>
+
+</p-table>

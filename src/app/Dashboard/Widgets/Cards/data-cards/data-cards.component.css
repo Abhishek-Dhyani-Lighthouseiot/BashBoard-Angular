@@ -1,0 +1,56 @@
+.row{
+    padding: 10px;
+}
+.col{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.CardBase{
+    height: 110px;
+    width: 100%;
+    background-color: var(--card-color);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px var(--card-shadow-color);
+}
+.overlayCard{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    z-index: 0;
+    display: flex;
+}
+.hiddenCard{
+    margin-top: -240px;
+    height: 100%;
+    width: 100%;
+    background-image: var(--card-gradient);
+    backdrop-filter: blur(8px);
+    
+    display: flex;
+    opacity: 0;
+}
+.overlayCard:hover + .hiddenCard, .hiddenCard:hover{
+    margin-top: -110px;
+    cursor: pointer;
+    opacity: 1;
+    transition: margin-top 0.3s ease-in-out;
+}
+.icon{
+    margin-left: 8px;
+    height: 90px;
+    fill: var(--text-color);
+}
+.cardHeading{
+    font-family: var(--Poppins-style);
+    font-size: 18px;
+    color: var(--text-color);
+    margin: auto;
+}
+.cardDetail{
+    font-family: var(--Poppins-style);
+    font-size: 22px;
+    font-weight:normal;
+    color: var(--card-heading);
+    margin: auto;
+}

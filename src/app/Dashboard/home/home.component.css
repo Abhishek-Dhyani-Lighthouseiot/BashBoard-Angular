@@ -1,0 +1,7 @@
+.board{
+    margin-top: 4%;
+    padding: 30px;
+    padding-left: 6%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;800&display=swap');
+@import "primeicons/primeicons.css";
+body{
+    --background-color: #F0F3F4;
+    --text-color: #5499C7;
+    --nav-color: #1e77b2;
+    --side-bar-color: white;
+    --icon-color: #5499C7;
+    --Poppins-style: 'Poppins', sans-serif;
+    --nav-hover:  rgba(198, 198, 198, 0.281);
+    --user-control: #5499C7;
+    --user-Detail:#F0F3F4;
+    --card-color: #FEFEFF;
+    --card-heading: #FEFEFF;
+    --card-shadow-color:#cedfe96e;
+    --form-background: #e2f0fa;
+    --card-gradient: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+    transition: 0.3s ease-in-out;
+}
+body.dark{
+    --background-color: #424242;
+    --text-color: rgb(108, 107, 107);
+    --nav-color: #171616;
+    --side-bar-color: #000000;
+    --icon-color: rgb(108, 107, 107);
+    --nav-hover: #1E1F1F;
+    --user-control: #2c2c2c;
+    --user-Detail:rgba(0, 162, 255, 0.69);
+    --card-color: #2e2e2e;
+    --card-heading: rgba(0, 162, 255, 0.69);
+    --card-shadow-color:rgba(60, 60, 60, 0.492);
+    --card-gradient: linear-gradient(to right, #232526, #272727);
+    --form-background: #646464;
+    transition: 0.2s ease-in-out;
+}
+body{
+    background: var(--background-color);
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+.tableHeading{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
